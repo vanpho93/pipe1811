@@ -13,6 +13,7 @@ export class AppComponent {
   height = Promise.resolve(100);
   grade = 5.5;
   nums = [1, 3, 4, 2, 6];
+  mode: keyof Person = 'name';
   students: Person[] = [
     { name: 'Ti', age: 10, height: 100 },
     { name: 'Teo', age: 14, height: 90 },
