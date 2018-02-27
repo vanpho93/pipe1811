@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RoundNumPipe } from './round-num.pipe';
 import { DoubleNumsPipe } from './double-nums.pipe';
+import { SortPersonPipe } from './sort-person.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     RoundNumPipe,
-    DoubleNumsPipe
+    DoubleNumsPipe,
+    SortPersonPipe
   ],
   imports: [
     BrowserModule

@@ -7,7 +7,12 @@
   <p>{{ nums | doubleNumsPipe }}</p>
   <p *ngFor="let num of nums | doubleNumsPipe | doubleNumsPipe | doubleNumsPipe">{{ num }}</p>
 </div> -->
-<div *ngFor="let person of students">
+<select>
+  <option value="name">Name</option>
+  <option value="age">Age</option>
+  <option value="height">Height</option>
+</select>
+<div *ngFor="let person of students | sortPerson: 'height'">
   <h3>Name: {{ person.name }}</h3>
   <p>Age: {{ person.age }}</p>
   <p>Height: {{ person.height }}</p>
