@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  now = new Date();
+  person = { name: 'Teo', age: 10 };
+  height = Promise.resolve(100);
 }
